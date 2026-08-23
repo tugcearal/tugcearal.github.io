@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tuğçe Aral</title>
+<meta name="description" content="Dr. Tuğçe Aral — Academic staff member, University of Potsdam. Research on intergroup relations, cultural diversity, and adolescent development.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="index.html" class="brand">Tuğçe Aral</a>
+    <nav>
+      <a href="index.html" class="active" aria-current="page">Home</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero wrap">
+    <div class="hero-photo">
+      <img src="assets/tugce-aral.webp" alt="Portrait of Dr. Tuğçe Aral" onerror="this.closest('.hero-photo').classList.add('no-photo')">
+    </div>
+    <div class="hero-text">
+      <h1>Dr. Tuğçe Aral</h1>
+      <p class="role">Academic Staff Member, Inclusive Pedagogy with a Focus on Diversity<br>University of Potsdam</p>
+      <p class="intro">
+        I study how young people navigate cultural diversity — from everyday classroom
+        climate to the development of ethnic identity and out-group solidarity during
+        adolescence.
+      </p>
+      <div class="hero-links">
+        <a href="contact.html" class="btn btn-primary">Get in touch</a>
+        <a href="https://www.researchgate.net/profile/Tugce-Aral" class="btn btn-outline" target="_blank" rel="noopener">ResearchGate</a>
+        <a href="https://twitter.com/tugcearal" class="btn btn-outline" target="_blank" rel="noopener">Twitter / X</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="glance">
+    <div>
+      <p class="glance-label">Position</p>
+      <p class="glance-value">Academic Staff Member</p>
+    </div>
+    <div>
+      <p class="glance-label">Institution</p>
+      <p class="glance-value">University of Potsdam</p>
+    </div>
+    <div>
+      <p class="glance-label">Focus</p>
+      <p class="glance-value">Diversity &amp; Adolescence</p>
+    </div>
+  </div>
+
+  <div class="teasers wrap">
+    <a href="research.html" class="teaser">
+      <div class="icon-circle" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="9"/>
+          <path d="M3 12h18M12 3c2.5 2.6 3.8 5.8 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.8-3.8-9s1.3-6.4 3.8-9z"/>
+        </svg>
+      </div>
+      <p class="teaser-eyebrow">Research</p>
+      <h3>Cultural diversity &amp; adolescent development</h3>
+      <p>Out-group solidarity, ethnic identity, and classroom climate research.</p>
+      <span class="arrow">Read more →</span>
+    </a>
+    <a href="publications.html" class="teaser">
+      <div class="icon-circle" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 19.5V5a2 2 0 0 1 2-2h13v15H6a2 2 0 0 0-2 2z"/>
+          <path d="M4 19.5A2 2 0 0 0 6 21h13"/>
+        </svg>
+      </div>
+      <p class="teaser-eyebrow">Publications</p>
+      <h3>Selected papers &amp; articles</h3>
+      <p>Peer-reviewed work on intergroup attitudes and acculturation.</p>
+      <span class="arrow">Read more →</span>
+    </a>
+    <a href="teaching.html" class="teaser">
+      <div class="icon-circle" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 3 1 8.5 12 14l9-4.9V15"/>
+          <path d="M5 10.7V16c0 1.5 3 3.5 7 3.5s7-2 7-3.5v-5.3"/>
+        </svg>
+      </div>
+      <p class="teaser-eyebrow">Teaching</p>
+      <h3>Thesis supervision</h3>
+      <p>Currently accepting Bachelor's and Master's students.</p>
+      <span class="arrow">Read more →</span>
+    </a>
+    <a href="contact.html" class="teaser">
+      <div class="icon-circle" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="5" width="18" height="14" rx="2"/>
+          <path d="m4 7 8 6 8-6"/>
+        </svg>
+      </div>
+      <p class="teaser-eyebrow">Contact</p>
+      <h3>Get in touch</h3>
+      <p>Office hours, email, and university profile.</p>
+      <span class="arrow">Read more →</span>
+    </a>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>&copy; <span id="year"></span> Tuğçe Aral</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
