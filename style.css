@@ -154,13 +154,13 @@ h1 {
 }
 .hero-links a.primary:hover { background: #2559c4; color: #fff; }
 
-.hero-photo { justify-self: end; width: 100%; max-width: 260px; }
+.hero-photo { justify-self: end; width: 100%; max-width: 340px; }
 
 .hero-photo img {
   width: 100%;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
-  border-radius: 20px;
+  border-radius: 50%;
   box-shadow: 0 10px 28px -14px rgba(23, 32, 43, 0.28);
   display: block;
 }
@@ -301,6 +301,6 @@ p:last-child { margin-bottom: 0; }
 /* Responsive */
 @media (max-width: 680px) {
   .hero { grid-template-columns: 1fr; padding-top: 40px; }
-  .hero-photo { max-width: 220px; margin: 0 auto; order: -1; }
+  .hero-photo { max-width: 260px; margin: 0 auto; order: -1; }
   h1 { font-size: 1.9rem; }
 }
