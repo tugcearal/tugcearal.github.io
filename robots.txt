@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tugcearal.github.io/sitemap.xml
