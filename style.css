@@ -52,7 +52,7 @@ a { color: var(--blue); }
 .brand {
   font-family: var(--display);
   font-weight: 700;
-  font-size: 1.15rem;
+  font-size: 1.3rem;
   color: var(--ink);
   text-decoration: none;
 }
@@ -102,6 +102,14 @@ nav a.active { background: var(--blue); color: #fff; }
 
 .hero-text .eyebrow { margin-bottom: 10px; }
 
+.name-tag {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: var(--blue);
+  margin: 0 0 14px;
+}
+
 h1 {
   font-family: var(--display);
   font-weight: 700;
@@ -146,7 +154,7 @@ h1 {
 }
 .hero-links a.primary:hover { background: #2559c4; color: #fff; }
 
-.hero-photo { justify-self: end; width: 100%; }
+.hero-photo { justify-self: end; width: 100%; max-width: 260px; }
 
 .hero-photo img {
   width: 100%;
@@ -161,6 +169,7 @@ h1 {
 .chips {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 10px;
   padding: 0 28px 44px;
 }
