@@ -52,8 +52,8 @@ a { color: var(--blue); }
 .brand {
   font-family: var(--display);
   font-weight: 700;
-  font-size: 1.3rem;
-  color: var(--ink);
+  font-size: 1.6rem;
+  color: var(--blue);
   text-decoration: none;
 }
 
@@ -101,14 +101,6 @@ nav a.active { background: var(--blue); color: #fff; }
 }
 
 .hero-text .eyebrow { margin-bottom: 10px; }
-
-.name-tag {
-  font-family: var(--display);
-  font-weight: 700;
-  font-size: 1.4rem;
-  color: var(--blue);
-  margin: 0 0 14px;
-}
 
 h1 {
   font-family: var(--display);
