@@ -119,7 +119,7 @@ h1 {
 
 .squiggle-phrase { position: relative; display: inline-block; color: var(--blue); }
 .squiggle-phrase svg { position: absolute; left: 2px; right: 2px; bottom: -8px; width: calc(100% - 4px); height: 10px; }
-.squiggle-phrase svg path { stroke: #c1633a; }
+.squiggle-phrase svg path { stroke: var(--coral); }
 
 .role {
   color: var(--ink-soft);
