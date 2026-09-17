@@ -90,6 +90,13 @@ nav a.active { background: var(--blue); color: #fff; }
   margin: 0;
 }
 
+.contact-head { display: flex; align-items: center; gap: 24px; }
+.contact-photo { width: 88px; height: 88px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
+
+@media (max-width: 480px) {
+  .contact-head { flex-direction: column; align-items: flex-start; }
+}
+
 /* Hero (home) */
 .hero {
   display: grid;
@@ -262,6 +269,56 @@ p:last-child { margin-bottom: 0; }
 .index-row h3 { font-family: var(--display); font-size: 1rem; color: var(--ink); margin: 0 0 3px; }
 .index-row p { margin: 0; font-size: 0.86rem; color: var(--ink-soft); }
 .index-row .idx-arrow { color: var(--blue); font-weight: 700; flex-shrink: 0; }
+
+/* Publications gallery */
+.pub-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  gap: 18px;
+  margin-bottom: 8px;
+}
+
+.pub-card {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  overflow: hidden;
+  background: var(--card);
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.pub-card:hover { transform: translateY(-3px); box-shadow: 0 12px 22px -14px rgba(23, 32, 43, 0.25); }
+
+.pub-card-icon {
+  aspect-ratio: 3 / 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pub-card-icon svg { width: 34%; height: 34%; }
+
+.pub-card-icon.c1 { background: var(--blue-soft); color: var(--blue); }
+.pub-card-icon.c2 { background: var(--coral-soft); color: var(--coral-ink); }
+.pub-card-icon.c3 { background: var(--yellow-soft); color: var(--yellow-ink); }
+.pub-card-icon.c4 { background: var(--mint-soft); color: var(--mint-ink); }
+
+.pub-card-body { padding: 12px 14px 14px; display: flex; flex-direction: column; gap: 3px; }
+
+.pub-card-year {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--blue);
+}
+
+.pub-card-title { font-size: 0.85rem; font-weight: 600; color: var(--ink); line-height: 1.35; }
+.pub-card-journal { font-size: 0.76rem; color: var(--ink-soft); font-style: italic; }
 
 /* Publications */
 .pub-entries { display: flex; flex-direction: column; gap: 22px; }
