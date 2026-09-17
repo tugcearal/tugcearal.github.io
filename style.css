@@ -409,6 +409,7 @@ a.media-link:hover { text-decoration: underline; }
 }
 .contact-block p { margin: 0; color: var(--ink-soft); }
 .contact-block a { color: var(--blue); }
+.cv-updated { font-size: 0.82rem; font-style: italic; color: var(--ink-soft); }
 
 /* Footer */
 .site-footer { padding: 24px 28px 44px; border-top: 1px solid var(--line); }
