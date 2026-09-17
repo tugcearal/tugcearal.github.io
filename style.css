@@ -378,6 +378,28 @@ p:last-child { margin-bottom: 0; }
 }
 a.media-link:hover { text-decoration: underline; }
 
+/* Page preview gallery */
+.page-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin: 16px 0 8px;
+}
+
+.page-gallery img {
+  width: 140px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 6px 16px -10px rgba(23, 32, 43, 0.3);
+  transition: transform 0.15s, box-shadow 0.15s;
+  display: block;
+}
+
+.page-gallery a:hover img {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 22px -12px rgba(23, 32, 43, 0.35);
+}
+
 /* Contact */
 .contact-block { max-width: var(--text-max); margin-bottom: 22px; }
 .contact-block:last-child { margin-bottom: 0; }
