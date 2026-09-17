@@ -301,6 +301,20 @@ p:last-child { margin-bottom: 0; }
   background: var(--blue-soft);
 }
 
+.pub-card-icon {
+  aspect-ratio: 3 / 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pub-card-icon svg { width: 34%; height: 34%; }
+
+.pub-card-icon.c1 { background: var(--blue-soft); color: var(--blue); }
+.pub-card-icon.c2 { background: var(--coral-soft); color: var(--coral-ink); }
+.pub-card-icon.c3 { background: var(--yellow-soft); color: var(--yellow-ink); }
+.pub-card-icon.c4 { background: var(--mint-soft); color: var(--mint-ink); }
+
 .pub-card-body { padding: 12px 14px 14px; display: flex; flex-direction: column; gap: 3px; }
 
 .pub-card-year {
