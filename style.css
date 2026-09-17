@@ -292,19 +292,14 @@ p:last-child { margin-bottom: 0; }
 
 .pub-card:hover { transform: translateY(-3px); box-shadow: 0 12px 22px -14px rgba(23, 32, 43, 0.25); }
 
-.pub-card-icon {
+.pub-card-thumb {
   aspect-ratio: 3 / 4;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+  background: var(--blue-soft);
 }
-
-.pub-card-icon svg { width: 34%; height: 34%; }
-
-.pub-card-icon.c1 { background: var(--blue-soft); color: var(--blue); }
-.pub-card-icon.c2 { background: var(--coral-soft); color: var(--coral-ink); }
-.pub-card-icon.c3 { background: var(--yellow-soft); color: var(--yellow-ink); }
-.pub-card-icon.c4 { background: var(--mint-soft); color: var(--mint-ink); }
 
 .pub-card-body { padding: 12px 14px 14px; display: flex; flex-direction: column; gap: 3px; }
 
